@@ -1,0 +1,97 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; }
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 30px; }
+
+.player:hover .player__description {
+  visibility: visible; }
+
+.player:hover .player__img {
+  border-radius: 60px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+
+.player:hover .player__title {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-align: center;
+  color: #2f4f4f;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+
+.player {
+  margin-bottom: 20px;
+  padding: 0 15px; }
+  .player:hover {
+    background-color: #eee;
+    border-radius: 6px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12); }
+  .player__photo {
+    position: relative; }
+  .player__number {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #8b0000; }
+  .player__img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 8px; }
+  .player__title {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2f4f4f;
+    margin-bottom: 10px; }
+  .player__description {
+    font-family: Arial;
+    visibility: hidden;
+    font-size: 21.6px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.container {
+  padding: 0 15px;
+  max-width: 800px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
