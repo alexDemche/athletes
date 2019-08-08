@@ -13,11 +13,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 920px;
   margin: 0 auto; }
   @media screen and (max-width: 751px) {
     .container {
-      max-width: 480px; } }
+      max-width: 460px; } }
 
 .players {
   display: grid;
@@ -35,7 +35,6 @@ body {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  position: relative;
   margin-top: -21px; }
   .player:hover {
     background-color: #eee;
@@ -44,17 +43,7 @@ body {
     cursor: pointer;
     z-index: 1; }
     .player:hover .player__description {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
-    .player:hover .player__img {
-      border-radius: 60px; }
-    .player:hover .player__title {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
-    .player:hover .player__description {
-      opacity: 1;
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
+      opacity: 1; }
   .player__photo {
     position: relative;
     padding: 10px 10px 0 10px; }
@@ -89,7 +78,6 @@ body {
     -webkit-transition: border-radius 1s;
     transition: border-radius 1s; }
   .player__title {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,6 +87,7 @@ body {
     font-size: 20px;
     line-height: 23px;
     color: #2f4f4f;
+    width: 100%;
     margin-bottom: 9px;
     -webkit-transition: all 1s;
     transition: all 1s; }
@@ -110,6 +99,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: Arial;
+    width: 100%;
     opacity: 0;
     font-size: 18px;
     line-height: 21px;
@@ -119,7 +109,6 @@ body {
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
-    border-top-left-radius: 6px;
     -webkit-transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
