@@ -44,6 +44,8 @@ body {
     z-index: 1; }
     .player:hover .player__description {
       opacity: 1; }
+    .player:hover .player__img {
+      border-radius: 60px; }
   .player__photo {
     position: relative;
     padding: 10px 10px 0 10px; }
