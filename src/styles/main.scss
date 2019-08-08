@@ -39,6 +39,10 @@ body {
     & .player__description {
       opacity: 1;
     }
+
+    & .player__img {
+      border-radius: 60px;
+    }
   }
 
   &__photo {
